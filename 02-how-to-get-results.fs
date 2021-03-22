@@ -37,6 +37,13 @@ a1 b1 2b2 .
 a1 b1 2b3 .
 a1 a1 2b4 .
 c1 a1 b1 2b5 . ( impossible at this stage )
+cr
 
+: quarters 4 /mod . ." ones and " . ." quarters " ;
+22 quarters
 
+cr
+: use-swap ( c a b -- n ) - swap / . ;
+3 20 8 use-swap
 
+bye
