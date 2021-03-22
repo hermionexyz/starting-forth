@@ -21,4 +21,10 @@ def f():
     blip()
     print()
 
-f()
+# f()
+
+def greet():
+    printx("hello i speak python")
+
+greet()
+
