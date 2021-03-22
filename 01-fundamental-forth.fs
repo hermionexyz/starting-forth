@@ -5,9 +5,11 @@
 : blip margin star ;
 : bar margin 5 stars ;
 : f bar blip bar blip blip cr ;
+( f )
 
 ( Greet )
 : greet ." hello! i speak forth" ;
+( greet )
 
 
 ( 4 3 + . )
@@ -33,17 +35,22 @@
 
 ( problems )
 
+
 ( problem 1 )
-
-: gift ." life" ;
-: giver ." zorain " ;
-: thanks cr ." dear " giver ." thanks for this " gift . ;
-
-
-
-
-( f )
-( greet )
+: gift ." life" ; : giver ." zorain " ;
+: thanks cr ." dear " giver ." thanks for this " gift cr ;
 thanks
 
-.
+
+( problem 2 )
+: ten.less 10 - . cr ;
+4 ten.less
+
+
+( problem 3 )
+: giver ." tinami" ;
+thanks
+
+
+
+bye
